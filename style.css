@@ -270,7 +270,7 @@ body{
 @media (max-width:720px){
   .header-inner{padding:0 16px}
   .nav-links{display:none}
-  .hamburger{display:flex}
+  .hamburger{display:none}
   .hero-grid{grid-template-columns:1fr; gap:18px}
   .photo-frame{width:200px; height:200px}
   .services-grid{grid-template-columns:1fr}
@@ -291,3 +291,9 @@ body{
 /* reveal animation helpers used by JS intersection observer */
 .reveal{opacity:0; transform:translateY(18px) scale(.995); transition:all .7s cubic-bezier(.2,.9,.2,1)}
 .reveal.in-view{opacity:1; transform:translateY(0) scale(1)}
+
+.service-card:hover{
+    border: 1px solid whitesmoke;
+    transform: scale(1.05);
+    transition: transform 0.9s ease;
+}
